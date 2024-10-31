@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Commentaires</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/main_logo.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="headerTitle">
+
+                <div class="title">
+                    <h1>Commentaires</h1>
+                </div>
+            </div>
+
+            <nav>
+                <div class="navigation">
+                    <a href="index.html">Accueil</a>
+                    <a href="photos.html">Galerie Photo</a>
+                    <a href="feedback.html" class="currentPage">Commentaires</a>
+                </div>
+                <div class="signin">
+                    <a href="connect.html" title="Page de connection">
+                        Se connecter</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <form action="mailto:2440471@csfoy.ca" method="post" enctype="text/plain">
+                <div class="form">
+                    <div>
+                        <label for="firstName">Prénom : </label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div>
+                        <label for="lastName">Nom : </label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                    <div>
+                        <label for="email">Courriel : </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phoneNum">Téléphone : </label>
+                        <input type="tel" name="phoneNum" id="phoneNum" placeholder="### ### ####">
+                    </div>
+                    <div>
+                        <label for="province">Province</label>
+                        <select name="province" id="province">
+                            <option value="Al">Alberta</option>
+                            <option value="Cb">Colombie-Britanique</option>
+                            <option value="Pe">Île-du-Prince-Édouard</option>
+                            <option value="Ot">Ontario</option>
+                            <option value="Qc" selected>Québec</option>
+                            <option value="Sk">Saskatchewan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="dateOfBirth">Date de naissance : </label>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+                    </div>
+
+                    <div>
+                        <label for="userFeedback">Commentaire : </label>
+                        <textarea name="userFeedback" id="userFeedback" rows="7" cols="25" required></textarea>
+                    </div>
+
+                    <div class="favoriteCarBrands">
+                        <label>Marque de voiture préféré</label>
+                        <div> 
+                            <input type="checkbox" name="carBrands" id="lamborghini">
+                            <label for="lamborghini">Lamborghini</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="carBrands" id="porsche">
+                            <label for="porsche">Porsche</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="carBrands" id="ferrari">
+                            <label for="ferrari">Ferrari</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="carBrands" id="bugatti">
+                            <label for="bugatti">Bugatti</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="carBrands" id="other">
+                            <label for="other">Autre</label>
+
+                        </div>
+                    </div>
+
+                    <div class="userReview">
+                        <label>Que pensez-vous de la page Web</label>
+                        <div>
+                            <label for="excellent">Excellent</label>
+                            <input type="radio" name="review" id="excellent" checked>
+                        </div>
+                        <div>
+                            <label for="great">Très bien</label>
+                            <input type="radio" name="review" id="great">
+                        </div>
+                        <div>
+                            <label for="good">Bien</label>
+                            <input type="radio" name="review" id="good">
+                        </div>
+                        <div>
+                            <label for="notBad">Pas mal</label>
+                            <input type="radio" name="review" id="notBad">
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
